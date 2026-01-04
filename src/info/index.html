@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<!--
+		<div id="topbar">
+			<h1 id="title">Time Monitor</h1>
+		</div>
+		-->
+
+		<!--
+		<div>
+			<pre id="log">empty</pre>
+		</div>
+		-->
+
+		<div class="gradient-bg">
+			<svg xmlns="https://www.w3.org/2000/svg">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphics" stdDeviation="10" result="blur"/>
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo"/>
+						<feBlend in="SourceGraphics" in2="goo"/>
+					</filter>
+				</defs>
+			</svg>
+
+			<div class="gradient-container">
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+				<div class="gradient"></div>
+			</div>
+		</div>
+
+		<div id="bg-overlay"></div>
+
+		<div id="content">
+			<p id="last-upd">Last Updated:</p>
+
+			<div id="weekly_data">
+				<button id="prev_week">
+					<img src="/imgs/left.png" alt="left">
+				</button>
+				<button id="next_week">
+					<img src="/imgs/right.png" alt="right">
+				</button>
+
+				<div class="weekly-hline" style="bottom:0;"></div>
+				<div class="weekly-hline" style="bottom:33.33%;"></div>
+				<div class="weekly-hline" style="top:33.33%;"></div>
+				<div class="weekly-hline" style="top:0;"></div>
+				<div class="weekly-vline" style="--order:0"></div>
+				<div class="weekly-vline" style="--order:1"></div>
+				<div class="weekly-vline" style="--order:2"></div>
+				<div class="weekly-vline" style="--order:3"></div>
+				<div class="weekly-vline" style="--order:4"></div>
+				<div class="weekly-vline" style="--order:5"></div>
+				<div class="weekly-vline" style="--order:6"></div>
+				<div class="weekly-vline" style="--order:7"></div>
+				
+				<button id="wbar0"><div class="weekly_bar" style="--order:0"></div></button>
+				<button id="wbar1"><div class="weekly_bar" style="--order:1"></div></button>
+				<button id="wbar2"><div class="weekly_bar" style="--order:2"></div></button>
+				<button id="wbar3"><div class="weekly_bar" style="--order:3"></div></button>
+				<button id="wbar4"><div class="weekly_bar" style="--order:4"></div></button>
+				<button id="wbar5"><div class="weekly_bar" style="--order:5"></div></button>
+				<button id="wbar6"><div class="weekly_bar" style="--order:6"></div></button>
+				
+				<p id="weekly-top-hr">0h</p>
+				<p id="weekly-bot-hr">0</p>
+				<div id="weekly-day-container">
+					<p>Sunday</p><p>Monday</p><p>Tuesday</p><p>Wednesday</p>
+					<p>Thursday</p><p>Friday</p><p>Saturday</p>
+				</div>
+
+				<div id="avg-line">
+					<p>avg</p>
+				</div>
+			</div>
+
+			<div id="day_container">
+				<p id="day">what day</p>
+				<p id="total">0h 0m</p>
+			</div>
+
+			<!--
+			<p id="total">Total: </p>
+			-->
+			<div id="data_container">
+			</div>
+		</div>
+
+	</body>
+</html>

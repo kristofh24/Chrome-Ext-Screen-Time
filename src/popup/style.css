@@ -1,0 +1,80 @@
+body {
+	width:300px;
+	height:auto;
+	padding:0px;
+	margin:0px;
+}
+
+::-webkit-scrollbar { /*black magic right here*/
+	display: none !important;
+}
+
+h2 {
+	padding:5px;
+}
+
+button {
+	width:100%;
+}
+
+#topbar {
+	height:32px;
+	background-color:rgb(20,173,255);
+	display:flex;
+}
+#title {
+	width:100%;
+	margin-top:auto;
+}
+
+#power,#settings {
+	width:15%;
+	height:100%;
+	background-color:rgba(0,0,0,0);
+	border:none;
+}
+#power img {	
+	width:24px;
+	height:24px;
+	margin:auto;
+	/*filter:contrast(40%);*/
+}
+#settings img {
+	width:26px;
+	height:26px;
+	margin:auto;
+}
+
+#content {
+	margin:15px;
+	width:270px;
+}
+
+#total {
+	font-size:15px;
+	font-weight:bold;
+}
+
+#data_container {
+	margin-left:15px;
+	margin-bottom:15px;
+	width:100%-15px; /*why margin right doesnt work idk*/
+}
+
+.timebar {
+	background-color:rgb(20,173,255);
+	border-radius:15px;
+	height:5px;
+	width:50%;
+}
+
+.detailed {
+	margin:15px;
+}
+
+#settings_t {
+	margin:15px;
+	width:270px;
+
+	display:none;
+}

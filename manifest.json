@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Time Monitor",
+    "description": "Monitors time spent on webpages",
+    "version": "1.0.0",
+	"action": {
+		"default_popup": "src/popup/index.html",
+		"default_title": ""
+	},
+	"background":
+	{
+		"service_worker": "src/background/worker.js"
+	},
+	"permissions": ["webNavigation","tabs","storage","idle","offscreen"]
+}
