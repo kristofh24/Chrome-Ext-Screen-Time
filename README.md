@@ -5,7 +5,7 @@
 **Timeline**: November 30, 2024 - January 25, 2025 (2 months)  
 **Approach**: Feature-driven development - began with core time tracking functionality and expanded to a detailed dashboard to display data
 
-[overview paragraph]
+This is a Chrome extension designed to track and monitor time spent on individual tabs within Google Chrome. Wanting to track my screen time on my computer but having no way to do so, I began designing my own extension to provide this functionality. I needed to learn the Chrome API on the fly, so I constantly consulted the official documentation for assistance. After designing the popup system, I felt it was not enough and decided to implement an entire detailed dashboard. I am especially satisfied with the final result of the dashboard, as I spent a lot of time refining the animations and the look and feel of the entire page to be aesthetic while communicating important data effectively. Future development plans are in place. Below is a detailed development flow to aid with understanding my process.
 
 ---
 
